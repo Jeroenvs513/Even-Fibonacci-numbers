@@ -6,7 +6,7 @@ based on the current and previous even fibonacci number.
 Calculations are performed in matrix form, 
 where the sum of the even fibonacci numbers is included in the equation.   
 
-Author: Jeroen van Stappen
+Author: @Jeroenvs513
 """
 
 import numpy as np          # import numpy library for matrix multiplications
@@ -20,7 +20,7 @@ x = np.array([[2],          # even fib. number,
               [0],          # previous even fib. number,
               [2]])         # sum of even fib. numbers up to and including x[0]
 # State transition matrix:
-A = np.array([[4, 1,0],     # calc. of next even fib. number (= 4x current + 1x previous even fib. number),
+A = np.array([[4, 1,0],     # calc. of next even fib. number (= 4* current + 1* previous even fib. number),
               [1, 0,0],     # previous fib. number is replaced with current,
               [4, 1,1]])    # calc. of the sum of even fib. numbers
 
